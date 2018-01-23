@@ -1,5 +1,6 @@
 <ol>
   <% @coupons.each do |coupon| %>
-    <%= coupon.coupon_code %>, available at <%= coupon.store %>
+    link_to "<%= coupon.coupon_code %>", coupon_path(coupon)
+     available at <%= coupon.store %>
   <% end %>
 </ol>
